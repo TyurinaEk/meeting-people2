@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Карта встреч - 2ГИС</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-2gis@1.0.0/dist/leaflet-2gis.js"></script>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+<div class="header">
+    <h1>🗺️ Карта встреч - 2ГИС</h1>
+    <button class="back-btn" onclick="window.location.href='index.html'">← На главную</button>
+</div>
+<div class="main-container">
+    <div id="map"></div>
+    <div class="events-panel">
+        <h3>📋 Мероприятия</h3>
+        <div class="events-list" id="eventsList"></div>
+    </div>
+</div>
+<div class="add-form" id="addForm">
+    <input type="text" id="addressInput" placeholder="Адрес (можно вручную)" value="">
+    <textarea id="activityText" rows="2" placeholder="Чем заняться? Бег, баскетбол..."></textarea>
+    <button id="submitBtn">➕ Добавить</button>
+    <button id="cancelBtn">Отмена</button>
+</div>
+ <script src="map.js"></script>
+</body>
+</html>

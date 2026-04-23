@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая Тюрина</title>
+    <link rel="stylesheet" href="stylekursovaia.css">
+    <script src="kursovaia.js"></script>
+</head>
+<body>
+    <!-- Бургер и меню выносим НАД слайдами, вне slides-container -->
+    <div class="header">
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="index.html">Главная</a>
+        <a href="kursovaia.html">Рекомендуемые места</a>
+        <a href="map.html">Открыть карту</a>
+    </div>
+
+    <div class="slides-container">
+        <section class="slide" id="slide1">
+            <h1>Россия</h1>
+            <h1>Воронеж</h1>
+        </section>
+        
+
+        <section class="slide" id="slide2">
+            <h1>ПЕТРОВСКАЯ НАБЕРЕЖНАЯ</h1>
+           <div class="a1">Петровская набережная находится на месте Воронежского адмиралтейства, основанного Петром I в 1696 году. Здесь строили корабли для Азовского похода.</div> 
+           <div class="a2">В 1860 году установили памятник Петру I. В 1972 году при создании водохранилища старый Петровский остров ушёл под воду. Современная набережная благоустроена в XXI веке </div> 
+        
+        </section>
+        
+        <section class="slide" id="slide3">
+            <h1>БАСКЕТБОЛЬНАЯ ПЛОЩАДКА</h1>
+            <h1 class="skate-title">СКЕЙТ-ПАРК</h1>
+        </section>
+        
+        <section class="slide" id="slide4">
+            <h1>спорт-площадка</h1>
+            <h1 class="voley-title">волейбольная площадка</h1>
+        </section>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

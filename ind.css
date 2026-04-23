@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+.slides-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #477CEF;
+    font-family: 'Climate Crisis';
+    text-align: center;
+    position: relative;
+}
+.slide:nth-child(2) { background-color:  #C1DFE9; }
+body {
+    background-color: #C1DFE9;
+    font-family: 'Climate Crisis', cursive;
+}
+
+#slide2 h1:nth-child(1) {
+    font-size: 40px; 
+    position: absolute;
+    top: 20%;
+    left: 30%; 
+    z-index: 1;
+    font-family: 'Climate Crisis';
+    color:#477CEF;
+}
+.slide:nth-child(3) { background-color:  #C1DFE9; }
+body {
+    background-color: #C1DFE9;
+    font-family: 'Climate Crisis', cursive;
+}
+
+#slide3 h1:nth-child(1) {
+    font-size: 40px; 
+    position: absolute;
+    top: 20%;
+    left: 60%; 
+    z-index: 1;
+    font-family: 'Climate Crisis';
+    color:#477CEF;
+}
+.slide h1{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    color: #477CEF;
+    font-size: 96px;
+    white-space: nowrap;
+}
+
+
+.section{
+    position: absolute;
+    top: 35%;
+    left: 100px; 
+    font-size: 28px;
+    background-color: #B1BFE2;
+    color:#477CEF;
+    font-family: 'Climate Crisis';
+    width:1200px;       
+    max-width: 1200px;    
+    text-align:justify;
+    border-radius: 30px;       
+    padding: 40px;    
+}
+.section2{
+    position: absolute;
+    top: 35%;
+    right: 100px; 
+    font-size: 28px;
+    background-color: #B1BFE2;
+    color:#477CEF;
+    font-family: 'Climate Crisis';
+    width:1200px;       
+    max-width: 1200px;    
+    text-align:justify;
+    border-radius: 30px;       
+    padding: 40px;    
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+}
+.burger {
+    width: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.burger span {
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    padding-top: 70px;
+    z-index: 999;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    font-family: Arial, sans-serif; 
+}
+
+.menu a:hover {
+    background: #555;
+}
+
+.menu.show {
+    display: block;
+}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

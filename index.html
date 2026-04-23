@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая Тюрина</title>
+    <link rel="stylesheet" href="ind.css">
+    <script src="kursovaia.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="index.html">Главная</a>
+        <a href="kursovaia.html">Рекомендуемые места</a>
+        <a href="map.html">Открыть карту</a>
+    </div>
+
+    <div class="slides-container">
+        <section class="slide" id="slide1">
+            <h1>lonely, but united</h1>  
+        </section>
+        <section class="slide" id="slide2">
+            <h1>Что это за проект?</h1>
+            <div class="section">Этот проект — приложение для встреч с людьми, созданное, чтобы помочь одиноким людям найти друзей по интересам. Здесь каждый может разделить свои увлечения с теми, кому это тоже близко. Мы поддерживаем здоровый образ жизни, поэтому спортсмены могут собираться вместе и заниматься любимыми видами спорта — будь то баскетбол, волейбол, скейтбординг или просто пробежка по набережной. </div>
+        </section>
+        <section class="slide" id="slide3">
+            <h1>Как пользоваться этим сайтом?</h1>
+            <div class="section2">Нужно нажать кнопку «Открыть карту», выбрать место и написать, чем вы планируете там заняться. А если вы ещё не знаете, куда отправиться, — загляните в раздел «Рекомендуемые места», где собраны лучшие локации для активного и приятного времяпрепровождения. Присоединяйтесь — здесь легко найти компанию по душе. </div>
+        </section>
+
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
